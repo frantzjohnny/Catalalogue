@@ -63,7 +63,7 @@ export const StoreFront: React.FC<StoreFrontProps> = ({
     const text = cart.map(item => `• ${item.quantity}x ${item.name} (${item.selectedSize}, ${item.selectedColor}) - R$ ${item.price}`).join('\n');
     const total = `\nTotal: R$ ${cartTotal.toFixed(2)}`;
     const msg = encodeURIComponent(`Olá, gostaria de finalizar meu pedido no SARAH CATALOGUE:\n\n${text}${total}`);
-    window.open(`https://wa.me/?text=${msg}`, '_blank');
+    window.open(`https://wa.me/5549991832903?text=${msg}`, '_blank');
   };
 
   // --- Filtering ---
